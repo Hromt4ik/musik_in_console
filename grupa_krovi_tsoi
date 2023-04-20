@@ -1,0 +1,250 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    //By Hromrt4ik ©
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            //такое ощущение что паузы стоят как-то не коректно
+
+            // Группа крови - Кино вокальная партия
+            // темп 120 bpm размер 4/4 тональность до мажор
+
+
+            //отрисовка картинки
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.SetWindowSize(100, 40);
+            Console.WriteLine("                                                                                                    \r\n                                                                                                    \r\n                          :               .                           ...                           \r\n                          .                .                       ..:.                             \r\n                          ..              .::                  .::::.                               \r\n                          .:.            .::::.              .::::.                                 \r\n                           ::::...      :::^^~!!!!~~^:......::::::                                  \r\n                          .::::::::...^7YPGBB########BBGPY?!^::::.                                  \r\n                           .::::::^?PB######################BP?~:..                                 \r\n                            ::::7PB#############################P?^:.      ..::....                 \r\n                          .:::7G##################################B?^.  .::...                      \r\n                        .:::~G######################################G!:::::.                        \r\n                     .:::::?##########################################?::::::.......                \r\n                      .:::?############################################?::::::::::::::.             \r\n                    .::::!##############################################!:::..    .:::::.           \r\n                .::::::::G##J~~~?#7~~~JB!!B###G!~5J~~~GP~~~Y#BJ^..:~5###P::.         ..   ..        \r\n            ..::::::::::~###^   :!   :BB  B&G~   ?^   Y?   !G.       ^B##~:.                        \r\n         .::::::::::::::!###~       .##B  P!  Y^ ?^   ..   7~   P#7   5##7:                         \r\n           .....::::::::!###^   :~   :GB    ?#&^ ?^   5J   !P   ..   .B##!:.                        \r\n                .:::::::^G##?:::7#!:::!B~:7B###?:5?:::GP:::J&G!:. .^JB##B^::.                       \r\n                .::::::::7#######################################B######Y::::.                      \r\n              .:::::::::::Y############################################P^:::::                      \r\n             .:::::::::::::Y##########################################P^::::.                       \r\n            ::::::.......:::?B#######################################Y::::.                         \r\n          .:....        .::::~5####################################G!::::.                          \r\n                        :::::::!5B###############################P7:::::.                           \r\n                      .::::::..::~?PB#########################GJ~:::::..                            \r\n                    .::::::      .::^!JPGB###############BGY?~::::::.                               \r\n                    :::::..       .::::::^!7?JYY55YYYJ7!~^:::::   .::::.                            \r\n                    .             .::.    ....::::::..:::::::::                                     \r\n                                ..::           ::::    .:::::::                                     \r\n                               .::.            ::.       .::::::.                                   \r\n                                              .:.         .::::::                                   \r\n                                              .:.          .::::::.                                 \r\n                                                              ......                                ");
+
+            //переменная нужна для повтора куплета в конце
+            int flag = 1;
+
+            for (int i = 0; i < 2; i++)
+            {
+                Console.Beep(247, 500); // Си малой актавы
+                Console.Beep(247, 250);
+                Console.Beep(247, 250);
+                Console.Beep(247, 500); // Си малой актавы
+                Console.Beep(247, 250);
+                Console.Beep(247, 250);
+
+
+                Console.Beep(247, 250);
+                Console.Beep(247, 250);
+                Console.Beep(247, 500); // Си малой актавы
+                Console.Beep(247, 500); // Си малой актавы
+                Console.Beep(247, 250);
+                Console.Beep(247, 250);
+
+                Console.Beep(293, 250);
+                Console.Beep(293, 750);
+                Console.Beep(293, 250);
+                Console.Beep(329, 500);
+
+                Console.Beep(293, 750);
+                Thread.Sleep(1000);
+                Thread.Sleep(500);
+
+                // вторая строка
+
+                Thread.Sleep(1000);
+                Console.Beep(329, 500);
+                Console.Beep(329, 250);
+                Console.Beep(329, 250);
+
+                Console.Beep(247, 500);
+                Thread.Sleep(1000);
+                Thread.Sleep(500);
+
+
+                Thread.Sleep(1000);
+
+                Console.Beep(220, 250);
+                Console.Beep(220, 250);
+                Console.Beep(247, 250);
+
+                Console.Beep(220, 750);
+                Thread.Sleep(1000);
+                Thread.Sleep(500);
+
+                Console.Beep(247, 500); // Си малой актавы
+                Console.Beep(247, 250);
+                Console.Beep(247, 250);
+                Console.Beep(247, 500); // Си малой актавы
+                Console.Beep(247, 500);
+
+                // третья строка
+
+                Console.Beep(247, 250);
+                Console.Beep(247, 250);
+                Console.Beep(247, 500);
+                Console.Beep(392, 500);
+                Console.Beep(247, 250);
+                Console.Beep(247, 250);
+
+
+                Console.Beep(293, 250);
+                Console.Beep(293, 250);
+                Console.Beep(293, 250);
+                Console.Beep(220, 250);
+                Console.Beep(293, 500);
+                Console.Beep(329, 250);
+                Console.Beep(220, 750);
+
+                Thread.Sleep(1000);
+                Thread.Sleep(500);
+                Thread.Sleep(1000);
+
+                Console.Beep(329, 250);
+                Console.Beep(329, 250);
+                Console.Beep(329, 500);
+
+
+                //четвертая строка 
+                Console.Beep(329, 500);
+                Thread.Sleep(1000);
+                Console.Beep(392, 250);
+                Console.Beep(392, 250);
+
+                Console.Beep(349, 250);
+                Console.Beep(349, 250);
+                Console.Beep(392, 500);
+                Console.Beep(349, 500);
+
+                Thread.Sleep(500);
+                Thread.Sleep(1000);
+
+                //припев
+
+
+                Console.Beep(392, 500);
+                Console.Beep(349, 500);
+
+
+                //возможно кастыль(определяеть повтор)
+                if (i == 1)
+                {
+                    flag = 1;
+                }
+                else
+                {
+                    flag = 0;
+                }
+
+                while (flag <= 1)
+                {
+                    Console.Beep(329, 250);
+                    Console.Beep(329, 250);
+                    Thread.Sleep(500);
+                    Console.Beep(493, 250);
+                    Console.Beep(493, 250);
+                    Console.Beep(493, 250);
+                    Console.Beep(329, 500);
+
+
+                    //пятая строка
+
+                    Thread.Sleep(250);
+                    Console.Beep(329, 250);
+                    Console.Beep(329, 250);
+                    Console.Beep(329, 250);
+                    Console.Beep(349, 250);
+                    Console.Beep(392, 500);
+
+                    Console.Beep(349, 250);
+                    Console.Beep(349, 250);
+                    Thread.Sleep(500);
+                    Console.Beep(493, 250);
+                    Console.Beep(493, 250);
+                    Console.Beep(493, 250);
+                    Console.Beep(349, 750);
+
+                    Thread.Sleep(1000);
+                    Console.Beep(349, 250);
+                    Console.Beep(349, 250);
+
+                    Console.Beep(392, 500);
+                    Console.Beep(392, 250);
+                    Console.Beep(329, 250);
+                    Console.Beep(392, 250);
+                    Console.Beep(392, 500);
+                    Console.Beep(392, 250);
+
+                    //шестая строка
+                    Console.Beep(329, 500);
+                    Thread.Sleep(1000);
+                    Console.Beep(392, 250);
+                    Console.Beep(392, 250);
+
+                    Console.Beep(349, 1000);
+                    Console.Beep(293, 1000);
+
+                    Thread.Sleep(1000);
+                    Console.Beep(392, 500);
+                    Console.Beep(349, 500);
+                    Console.Beep(392, 500);
+                    Console.Beep(392, 500);
+                    Console.Beep(392, 250);
+                    Console.Beep(392, 500);
+                    Console.Beep(392, 250);
+
+                    Console.Beep(329, 500);
+                    Thread.Sleep(1000);
+                    Console.Beep(392, 250);
+                    Console.Beep(392, 250);
+
+                    //седьмая строка
+
+                    Console.Beep(349, 500);
+                    Console.Beep(349, 500);
+                    Console.Beep(493, 250);
+                    Console.Beep(493, 500);
+                    Console.Beep(493, 250);
+
+                    Console.Beep(349, 500);
+                    Thread.Sleep(1000);
+                    Console.Beep(349, 250);
+                    Console.Beep(349, 250);
+
+                    Console.Beep(392, 500);
+                    Console.Beep(392, 250);
+                    Console.Beep(329, 250);
+                    Console.Beep(392, 500);
+                    Console.Beep(329, 500);
+
+                    Thread.Sleep(1500);
+                    Console.Beep(392, 250);
+                    Console.Beep(392, 250);
+
+                    Console.Beep(349, 1000);
+                    Console.Beep(493, 1000);
+
+                    //восьмая строка
+
+                    Console.Beep(440, 1000);
+                    Thread.Sleep(500);
+                    Console.Beep(349, 500);
+
+
+
+                    Console.Beep(392, 500);
+                    Console.Beep(329, 500);
+                    Thread.Sleep(1000);
+
+                    flag++;
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
